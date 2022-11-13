@@ -2,6 +2,7 @@
 
     .body {
         margin: 0;
+        /* background-color: #f6eac2; */
         background-color: #f6eac2;
     } 
     .navbar {
@@ -27,15 +28,28 @@
         color: var(--gray4)
     }
 
-    .fa {
-        font-size: 50px;
-    }
-
-
     @media only screen and (max-width: 960px) {
     .sm-icons .nav-item {
         padding-right: 1em;
     }
     }
+
+    .intro-image {
+        height: 400px;
+        width: 300px;
+        border-radius: 40%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 3px solid white;
+    }
+
+    .intro-writeup {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: var(--gray2);
+    }
+
+    
+
   
 
