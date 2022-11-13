@@ -2,7 +2,6 @@
 
     .body {
         margin: 0;
-        /* background-color: #f6eac2; */
         background-color: #f6eac2;
     } 
     .navbar {
@@ -16,6 +15,7 @@
         height: 60px;
         width: 60px;
         border-radius: 50%;
+        border: 3px solid white;
     }
 
     .navbar .navbar-nav .nav-link {
@@ -47,6 +47,22 @@
     .intro-writeup {
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         color: var(--gray2);
+    }
+
+    #project {
+        background-color: #e7fce4;
+    }
+
+    #contact {
+        background-color: #dcd0d0;
+    }
+
+    #work {
+        background-color: #ecf2f3;
+    }
+
+    #intro {
+        background-color: #f6eac2;
     }
 
     
