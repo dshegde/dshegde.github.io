@@ -1,51 +1,41 @@
-.container {
-    width: 50vw;
-  }
-  
-  
-  img {
-    border-radius: 200px 200px 200px 200px;
-    border-style: hidden;
-  }
-  
-  main{
-    width: 400px;
-    margin: 0 auto;
-    white-space: pre;
-  }
-  
-  p{
-    word-wrap: break-word;
-    width: 600px;
-    margin: 0 auto;
-  }
 
-  /* body {
-    margin: 0;
-  }
+
+    .body {
+        margin: 0;
+        background-color: #f6eac2;
+    } 
+    .navbar {
+        background-color: var(--gray2);
+    }
+    .sm-icons {
+    flex-direction: row;
+    }
+
+    .logo {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        color: #f6eac2;
+        font-size: 1.5em;
+        margin-left: 30px;
+    }
+
+    .navbar .navbar-nav .nav-link:hover {
+        color: var(--gray4)
+    }
+
+    .fa {
+        font-size: 50px;
+    }
+
+
+    @media only screen and (max-width: 960px) {
+    .sm-icons .nav-item {
+        padding-right: 1em;
+    }
+    }
   
-  .nav-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    
-  }
-  
-  .list-item {
-    display:inline-block;
-    background-color: var(--green);
-    padding-left: 0;
-    margin-left: -6px;
-  }
-  
-  .nav-link {
-    text-decoration: none;
-    display: block;
-    color: var(--white);
-    padding: 1em;
-  }
-  
-  .nav-link:hover {
-    background-color: var(--orange);
-    color: var(--black);
-  }   */
+
