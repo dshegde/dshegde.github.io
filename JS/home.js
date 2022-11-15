@@ -66,12 +66,18 @@ const submit = document.createElement('input');
 submit.id = 'submit';
 submit.type = 'submit';
 submit.value = 'Send';
-submit.classList.add('btn', 'btn-primary', 'col-4', 'me-1', 'mx-auto');
+submit.classList.add('btn', 'btn-outline-dark', 'col-5', 'mx-auto', 'bg-dark', 'text-light');
 const reset = document.createElement('input');
 reset.id = 'reset';
 reset.type = 'reset';
 reset.value = 'Reset';
-reset.classList.add('btn', 'btn-secondary', 'col-4', 'me-1', 'mx-auto');
+reset.classList.add('btn', 'btn-outline-secondary', 'col-5', 'mx-auto', 'bg-dark', 'text-light');
 buttonDiv.appendChild(submit);
 buttonDiv.appendChild(reset);
 // End form
+
+submit.onclick = function () {
+    window.location = "mailto:hegdedeepa79@pdx.edu";
+}
+    
+

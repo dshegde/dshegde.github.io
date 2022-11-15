@@ -1,36 +1,50 @@
 
 
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
     .body {
         margin: 0;
-        background-color: #f6eac2;
+        /* background-color: #fff5db; */
     } 
     .navbar {
-        background-color: var(--gray2);
-    }
-    .sm-icons {
-    flex-direction: row;
+        background-color: #c9c9c9;
+        height: min-content;
+        position: fixed;
+        overflow: hidden;
+        top: 0;
     }
 
     .logo {
-        height: 60px;
-        width: 60px;
+        height: 50px;
+        width: 50px;
         border-radius: 50%;
-        border: 3px solid white;
+        border: 2px solid var(--gray3);
+        float: left;
     }
 
     .navbar .navbar-nav .nav-link {
-        color: #f6eac2;
-        font-size: 1.5em;
-        margin-left: 30px;
+        /* color: #fff5db; */
+        color: black;
+        font-size: 1.3em;
+        margin-left: 25px;
     }
 
     .navbar .navbar-nav .nav-link:hover {
-        color: var(--gray4)
+        color: var(--gray1)
     }
 
+    .sm-icons {
+        flex-direction: row;
+        }
+    
+
     @media only screen and (max-width: 960px) {
-    .sm-icons .nav-item {
+    .sm-icons .nav-item .nav-icon{
         padding-right: 1em;
+        display: block;
     }
     }
 
@@ -50,21 +64,74 @@
     }
 
     #project {
-        background-color: #e7fce4;
+        /* background-color: #dcd0d0; */
+        background-color: black;
     }
 
     #contact {
-        background-color: #dcd0d0;
+        /* background-color: #e7fce4; */
+        /* background-color: #FBE2C9; */
+        background-color: black;
     }
 
     #work {
-        background-color: #ecf2f3;
+        /* background-color: #ecf2f3; */
+        background-color: black;
     }
 
     #intro {
-        background-color: #f6eac2;
+        /* background-color: #f6eac2; */
+        /* background-color: #fff5db; */
+        background-color: black;
     }
 
+    .navbar-brand {
+        display: inline;
+        align-items: center;
+    }
+    .heading {
+        float: right;
+        /* color: #fff5db; */
+        color: black;
+        font-size: 19px;
+        margin-left: 5px;
+        font-family:sans-serif;
+    }
+    .heading:hover {
+        color: var(--gray1);
+    }
+
+    .first-work {
+        height: 300px;
+    }
+
+    .second-work {
+        height: 300px;
+    }
+
+    .third-work {
+        height: 300px;
+    }
+
+    .projectText.card {
+        height: 350px;
+        cursor: pointer;
+    }
+    .card-title {
+        text-align: center;
+        text-decoration: underline;
+    }
+    
+    .projectText:hover {
+        border: 3px solid white;
+    }
+
+    .viewcode {
+        margin-left: 35%;
+    }
+
+
+    
     
 
   
