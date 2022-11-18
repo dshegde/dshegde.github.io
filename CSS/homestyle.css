@@ -7,33 +7,31 @@
     
     .body {
         margin: 0;
-        /* background-color: #fff5db; */
     } 
     .navbar {
-        background-color: #c9c9c9;
-        height: min-content;
         position: fixed;
-        overflow: hidden;
         top: 0;
+        overflow: hidden;
     }
 
     .logo {
         height: 50px;
         width: 50px;
         border-radius: 50%;
-        border: 2px solid var(--gray3);
+        border: 2px solid #D2B14C;
         float: left;
     }
 
     .navbar .navbar-nav .nav-link {
-        /* color: #fff5db; */
-        color: black;
+        color: white;
         font-size: 1.3em;
         margin-left: 25px;
     }
 
     .navbar .navbar-nav .nav-link:hover {
-        color: var(--gray1)
+        cursor: pointer;
+        color: #D2B14C;
+        border-bottom: 5px solid #D2B14C;
     }
 
     .sm-icons {
@@ -51,37 +49,32 @@
     .intro-image {
         height: 400px;
         width: 300px;
-        border-radius: 40%;
+        border-radius: 45%;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        border: 3px solid white;
+        /* border: 3px solid #F1C232; */
     }
 
     .intro-writeup {
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         color: var(--gray2);
+        text-align: center;
     }
 
     #project {
-        /* background-color: #dcd0d0; */
         background-color: black;
     }
 
     #contact {
-        /* background-color: #e7fce4; */
-        /* background-color: #FBE2C9; */
         background-color: black;
     }
 
     #work {
-        /* background-color: #ecf2f3; */
         background-color: black;
     }
 
     #intro {
-        /* background-color: #f6eac2; */
-        /* background-color: #fff5db; */
         background-color: black;
     }
 
@@ -91,14 +84,14 @@
     }
     .heading {
         float: right;
-        /* color: #fff5db; */
-        color: black;
+        color: #D2B14C;
         font-size: 19px;
         margin-left: 5px;
-        font-family:sans-serif;
+        font-family:fantasy;
     }
     .heading:hover {
-        color: var(--gray1);
+        color: #D2B14C;
+        font-size: 20px;
     }
 
     .first-work {
@@ -123,11 +116,35 @@
     }
     
     .projectText:hover {
-        border: 3px solid white;
+        border: 3px solid #D2B14C;
     }
 
     .viewcode {
         margin-left: 35%;
+    }
+    .viewcode:hover {
+        border: 3px solid #D2B14C;
+    }
+
+    .menuitem {
+        color: white;
+    }
+
+    .menuitem:hover {
+        cursor: pointer;
+        color: #D2B14C;
+    }
+    .footer {
+        height: 20px;
+        color: #D2B14C;
+        font-size: small;
+    }
+    .footerEmail {
+        height: 20px;
+        font-size: small;
+        color: #D2B14C;
+        cursor: pointer;
+        text-decoration: none;
     }
 
 

@@ -5,7 +5,7 @@ const main = document.createElement('main');
 main.classList.add('container-fluid', 'mt-5', 'mb-5');
 formDiv.append(main);
 const form = document.createElement('form');
-form.classList.add('bg-light', 'border', 'rounded', 'mx-auto', 'p-3');
+form.classList.add('bg-light', 'border', 'rounded', 'mx-auto', 'p-3', 'border', 'border-warning');
 main.append(form);
 
 // Start form 
@@ -20,6 +20,7 @@ form.append(nameDiv);
 const nameLabel = document.createElement('label');
 nameLabel.classList.add('col-4', 'col-form-label');
 nameLabel.textContent = 'Name:';
+nameLabel.style.fontSize = 'large';
 nameLabel.htmlFor = 'username';
 const username = document.createElement('input');
 username.classList.add('border', 'border-grey', 'rounded', 'col-md-8', 'col-sm-11', 'mx-sm-2', 'mx-md-0', 'col-xs-15', 'mx-xs-2');
@@ -34,6 +35,7 @@ form.append(emailDiv);
 const emailLabel = document.createElement('label');
 emailLabel.classList.add('col-4', 'col-form-label');
 emailLabel.textContent = 'Email:';
+emailLabel.style.fontSize = 'large';
 emailLabel.htmlFor = 'email';
 const email = document.createElement('input');
 email.classList.add('border', 'border-grey', 'rounded', 'col-md-8', 'col-sm-11', 'mx-sm-2', 'mx-md-0', 'col-xs-15', 'mx-xs-2');
@@ -48,6 +50,7 @@ form.append(msgDiv);
 const msgLabel = document.createElement('label');
 msgLabel.classList.add('col-4', 'col-form-label');
 msgLabel.textContent = 'Message:';
+msgLabel.style.fontSize = 'large';
 msgLabel.htmlFor = 'message';
 const msg = document.createElement('textarea');
 msg.classList.add('border', 'border-grey', 'rounded', 'col-md-8', 'col-sm-11', 'mx-sm-2', 'mx-md-0', 'col-xs-15', 'mx-xs-2');
@@ -66,12 +69,12 @@ const submit = document.createElement('input');
 submit.id = 'submit';
 submit.type = 'submit';
 submit.value = 'Send';
-submit.classList.add('btn', 'btn-outline-dark', 'col-5', 'mx-auto', 'bg-dark', 'text-light');
+submit.classList.add('btn', 'btn-outline-dark', 'col-5', 'mx-auto', 'bg-dark', 'text-light', 'border', 'border-warning');
 const reset = document.createElement('input');
 reset.id = 'reset';
 reset.type = 'reset';
 reset.value = 'Reset';
-reset.classList.add('btn', 'btn-outline-secondary', 'col-5', 'mx-auto', 'bg-dark', 'text-light');
+reset.classList.add('btn', 'btn-outline-secondary', 'col-5', 'mx-auto', 'bg-dark', 'text-light', 'border', 'border-warning');
 buttonDiv.appendChild(submit);
 buttonDiv.appendChild(reset);
 // End form
@@ -79,5 +82,4 @@ buttonDiv.appendChild(reset);
 submit.onclick = function () {
     window.location = "mailto:hegdedeepa79@pdx.edu";
 }
-    
 
