@@ -2,7 +2,7 @@
 
 const formDiv = document.getElementById('contact');
 const main = document.createElement('main');
-main.classList.add('container-fluid', 'mt-5', 'mb-5');
+main.classList.add('container-fluid', 'mt-4', 'mb-5');
 formDiv.append(main);
 const form = document.createElement('form');
 form.classList.add('bg-secondary', 'border', 'rounded', 'mx-auto', 'p-3', 'border', 'border-warning');
