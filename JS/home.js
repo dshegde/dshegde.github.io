@@ -1,5 +1,4 @@
 
-
 const formDiv = document.getElementById('contact');
 const main = document.createElement('main');
 main.classList.add('container-fluid', 'mt-4', 'mb-5');
@@ -86,11 +85,10 @@ submit.onclick = function () {
     window.location = "mailto:hegde@pdx.edu";
 }
 
-var coll = document.getElementsByClassName("collapsible");
-var i;
+let collap = document.getElementsByClassName("collapsible");
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
+for (let i = 0; i < collap.length; i++) {
+  collap[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
     if (content.style.maxHeight){

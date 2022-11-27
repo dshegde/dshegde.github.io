@@ -1,203 +1,207 @@
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
-    * {
-        margin: 0;
-        padding: 0;
-    }
+html {
+    scroll-padding-top: 100px;
+}
 
-    html {
-        scroll-padding-top: 100px;
-    }
+.body {
+    margin: 0;
+} 
+.navbar {
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #D2B14C;
+    float: left;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+    font-size: 1.3em;
+    margin-left: 25px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    cursor: pointer;
+    color: #D2B14C;
+    border-bottom: 5px solid #D2B14C;
+}
+
+.sm-icons {
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 960px) {
+.sm-icons .nav-item .nav-icon{
+    padding-right: 1em;
+    display: block;
+}
+
+.active:after {
+    content: "\2212";
+    height: 5px;
+}
+}
+
+.intro-image {
+    height: 400px;
+    width: 300px;
+    border-radius: 45%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #D2B14C;
+}
+
+.intro-writeup {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+#project {
+    background-color: black;
+}
+
+#contact {
+    background-color: black;
+}
+
+#work {
+    background-color: black;
+}
+
+#intro {
+    background-color: black;
+}
+
+.navbar-brand {
+    display: inline;
+    align-items: center;
+}
+
+.heading {
+    float: right;
+    color: #D2B14C;
+    font-size: 19px;
+    margin-left: 5px;
+    font-family:fantasy;
+}
+
+.heading:hover {
+    color: #D2B14C;
+    font-size: 20px;
+}
+
+.first-work {
+    height: 300px;
+}
+
+.second-work {
+    height: 300px;
+}
+
+.third-work {
+    height: 300px;
+}
+
+.projectText.card {
+    height: 350px;
+    cursor: pointer;
+}
+
+.card-title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.projectText:hover {
+    border: 3px solid #D2B14C;
+}
+
+.viewcode {
+    margin-left: 35%;
+}
+
+.viewcode:hover {
+    border: 3px solid #D2B14C;
+}
+
+.menuitem {
+    color: white;
+}
+
+.menuitem:hover {
+    cursor: pointer;
+    color: #D2B14C;
+}
+
+.footer {
+    height: 20px;
+    color: #D2B14C;
+    font-size: small;
+}
+.footerEmail {
+    height: 20px;
+    font-size: small;
+    color: #D2B14C;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.collapsible {
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    border-top: 1px solid #D2B14C;
+}
     
-    .body {
-        margin: 0;
-    } 
-    .navbar {
-        position: fixed;
-        top: 0;
-        overflow: hidden;
-    }
-
-    .logo {
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-        border: 2px solid #D2B14C;
-        float: left;
-    }
-
-    .navbar .navbar-nav .nav-link {
-        color: white;
-        font-size: 1.3em;
-        margin-left: 25px;
-    }
-
-    .navbar .navbar-nav .nav-link:hover {
-        cursor: pointer;
-        color: #D2B14C;
-        border-bottom: 5px solid #D2B14C;
-    }
-
-    .sm-icons {
-        flex-direction: row;
-        }
+.active, .collapsible:hover {
+    color: #D2B14C;
+}
     
-
-    @media only screen and (max-width: 960px) {
-    .sm-icons .nav-item .nav-icon{
-        padding-right: 1em;
-        display: block;
-    }
-    .active:after {
-        content: "\2212";
-        height: 5px;
-    }
-    }
-
-    .intro-image {
-        height: 400px;
-        width: 300px;
-        border-radius: 45%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border: 2px solid #D2B14C;
-    }
-
-    .intro-writeup {
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        text-align: center;
-    }
-
-    #project {
-        background-color: black;
-    }
-
-    #contact {
-        background-color: black;
-    }
-
-    #work {
-        background-color: black;
-    }
-
-    #intro {
-        background-color: black;
-    }
-
-    .navbar-brand {
-        display: inline;
-        align-items: center;
-    }
-    .heading {
-        float: right;
-        color: #D2B14C;
-        font-size: 19px;
-        margin-left: 5px;
-        font-family:fantasy;
-    }
-    .heading:hover {
-        color: #D2B14C;
-        font-size: 20px;
-    }
-
-    .first-work {
-        height: 300px;
-    }
-
-    .second-work {
-        height: 300px;
-    }
-
-    .third-work {
-        height: 300px;
-    }
-
-    .projectText.card {
-        height: 350px;
-        cursor: pointer;
-    }
-    .card-title {
-        text-align: center;
-        text-decoration: underline;
-    }
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
     
-    .projectText:hover {
-        border: 3px solid #D2B14C;
-    }
+.active:after {
+    content: "\2212";
+}
 
-    .viewcode {
-        margin-left: 35%;
-    }
-    .viewcode:hover {
-        border: 3px solid #D2B14C;
-    }
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #f1f1f1;
+}
 
-    .menuitem {
-        color: white;
-    }
-
-    .menuitem:hover {
-        cursor: pointer;
+.location {
         color: #D2B14C;
-    }
-    .footer {
-        height: 20px;
-        color: #D2B14C;
-        font-size: small;
-    }
-    .footerEmail {
-        height: 20px;
-        font-size: small;
-        color: #D2B14C;
-        cursor: pointer;
-        text-decoration: none;
-    }
+}
 
-    .collapsible {
-        color: white;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 20px;
-        border-top: 1px solid #D2B14C;
-      }
-      
-      .active, .collapsible:hover {
-        color: #D2B14C;
-      }
-      
-      .collapsible:after {
-        content: '\002B';
-        color: white;
-        font-weight: bold;
-        float: right;
-        margin-left: 5px;
-      }
-      
-      .active:after {
-        content: "\2212";
-      }
-
-      .content {
-        padding: 0 18px;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease-out;
-        background-color: #f1f1f1;
-      }
-
-      .location {
-          color: #D2B14C;
-      }
-
-      .frame {
-        align-items: center;
-        margin: auto;
-      }
+.frame {
+    align-items: center;
+    margin: auto;
+}
 
       
 
