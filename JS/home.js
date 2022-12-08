@@ -4,7 +4,7 @@ const main = document.createElement('main');
 main.classList.add('container-fluid', 'mt-4', 'mb-5');
 formDiv.append(main);
 const form = document.createElement('form');
-form.classList.add('bg-secondary', 'border', 'rounded', 'mx-auto', 'p-3', 'border', 'border-warning');
+form.classList.add('bg-dark', 'border', 'rounded', 'mx-auto', 'p-3', 'border', 'border-warning');
 main.append(form);
 
 // Start form 
@@ -20,7 +20,6 @@ const nameLabel = document.createElement('label');
 nameLabel.classList.add('col-4', 'col-form-label', 'text-light');
 nameLabel.textContent = 'Name:';
 nameLabel.style.fontSize = '20px';
-nameLabel.style.fontWeight = 'bold';
 nameLabel.htmlFor = 'username';
 const username = document.createElement('input');
 username.classList.add('border', 'border-grey', 'rounded', 'col-md-7', 'col-sm-11', 'mx-sm-2', 'mx-md-2', 'col-xs-15', 'mx-xs-2');
@@ -29,6 +28,7 @@ username.id = 'username';
 nameDiv.appendChild(nameLabel);
 nameDiv.appendChild(username);
 
+
 const emailDiv = document.createElement('div');
 emailDiv.classList.add('form-group', 'row', 'mb-3');
 form.append(emailDiv);
@@ -36,7 +36,6 @@ const emailLabel = document.createElement('label');
 emailLabel.classList.add('col-4', 'col-form-label', 'text-light');
 emailLabel.textContent = 'Email:';
 emailLabel.style.fontSize = '20px';
-emailLabel.style.fontWeight = 'bold';
 emailLabel.htmlFor = 'email';
 const email = document.createElement('input');
 email.classList.add('border', 'border-grey', 'rounded', 'col-md-7', 'col-sm-11', 'mx-sm-2', 'mx-md-2', 'col-xs-15', 'mx-xs-2');
@@ -52,7 +51,6 @@ const msgLabel = document.createElement('label');
 msgLabel.classList.add('col-4', 'col-form-label', 'text-light');
 msgLabel.textContent = 'Message:';
 msgLabel.style.fontSize = '20px';
-msgLabel.style.fontWeight = 'bold';
 msgLabel.htmlFor = 'message';
 const msg = document.createElement('textarea');
 msg.classList.add('border', 'border-grey', 'rounded', 'col-md-7', 'col-sm-11', 'mx-sm-2', 'mx-md-2', 'col-xs-15', 'mx-xs-2');
@@ -76,7 +74,7 @@ const reset = document.createElement('input');
 reset.id = 'reset';
 reset.type = 'reset';
 reset.value = 'Reset';
-reset.classList.add('btn', 'btn-warning', 'col-5', 'mx-auto');
+reset.classList.add('btn', 'btn-outline-warning', 'col-5', 'mx-auto');
 buttonDiv.appendChild(submit);
 buttonDiv.appendChild(reset);
 // End form

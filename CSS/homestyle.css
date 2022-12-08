@@ -97,6 +97,14 @@ html {
     font-family:fantasy;
 }
 
+.topic {
+    color: white;
+}
+
+.topic:hover {
+    color: #D2B14C;
+}
+
 .heading:hover {
     color: #D2B14C;
     font-size: 20px;
@@ -202,6 +210,14 @@ html {
     align-items: center;
     margin: auto;
 }
+
+/*--------------*/
+
+
+
+
+/*---------------------*/
+
 
       
 
