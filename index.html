@@ -13,6 +13,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script defer src="/JS//home.js"></script>
   </head>
     <body class="body bg-dark">
@@ -188,6 +189,41 @@
                 </div>
                 <div class="row mx-auto bg-dark" id="contact">
                     <h2 class="text-center mb-3 mt-4 topic"><i class="fa fa-envelope"></i>   Contact Me</h2> 
+                    <main class="container-fluid mt-4 mb-5">
+                        <form class="bg-dark border rounded mx-auto p-3 border border-warning col-5"
+                        action="https://formsubmit.co/hegdedeepa79@gmail.com" method="post">
+                            <h4 class="text-uppercase mb-3 text-light text-center">Get in touch!</h4>
+                            <input type="hidden" name="_subject" id="PORTFOLIO MESSAGE!!!">
+                            <div class="form-group row mb-3">
+                                <label for="username" class="col-4 col-form-label text-light contactLabel fs-5">Name:</label>
+                                <input type="text" 
+                                name="name" 
+                                id="name" 
+                                placeholder="Full Name" 
+                                class="border border-grey rounded col-md-7 col-sm-11 mx-sm-2 mx-md-2 col-xs-15 mx-xs-2"
+                                required>
+                            </div>
+                            <div class="form-group row mb-3">
+                                <label for="email" class="col-4 col-form-label text-light contactLabel fs-5">Email:</label>
+                                <input type="email" 
+                                class=" border border-grey rounded col-md-7 col-sm-11 mx-sm-2 mx-md-2 col-xs-15 mx-xs-2" 
+                                id="email" name="email" placeholder="Enter email"
+                                required>
+                            </div>
+                            <div class="form-group row mb-3">
+                                <label for="message" class="col-4 col-form-label text-light contactLabel fs-5">Message:</label>
+                                <textarea name="message" id="message" rows="10" placeholder="Leave a message.."
+                                class="border border-grey rounded col-md-7 col-sm-11 mx-sm-2 mx-md-2 col-xs-15 mx-xs-2"
+                                required></textarea>
+                            </div>
+                            <div class="form-group row">
+                            <button type="submit" id="submit" class="btn btn-warning col-5 mx-auto fs-5" value="Submit">
+                                <i class="fa fa-send"></i>
+                            Send</button> />
+                            <button type="reset" class="btn btn-outline-warning col-5 mx-auto fs-5" value="Reset">Clear</button> />
+                            </div>
+                        </form>
+                    </main>
                 </div>
             </div>
         </main>
