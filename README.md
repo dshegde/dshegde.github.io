@@ -11,10 +11,10 @@ Contact Form
 Social Networking Site details to connect with me
 
 VISIT AT:
-Portfolio deployed using GitHub Pages at: https://dshegde.github.io/#project
+Portfolio deployed using GitHub Pages at: https://dshegde.github.io/
 
 HOW TO RUN:
-Download the project and run the index.html file to fire up the web page or visit the portfolio at the deployed link https://dshegde.github.io/#project
+Download the project and run the index.html file to fire up the web page or visit the portfolio at the deployed link https://dshegde.github.io/
 
 BUILD PROCESS:
 1. Technologies used are HTML, CSS, JavaScript and Bootstrap
