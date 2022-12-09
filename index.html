@@ -7,6 +7,7 @@
     <title>Deepa Hegde - Portfolio</title>
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/CSS/homestyle.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
@@ -33,10 +34,13 @@
                             <a class="nav-link menuitem" href="#intro"><i class="fa fa-user-o"></i>   Know Me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menuitem" href="#project"><i class="fa fa-book"></i>   Projects</a>
+                            <a class="nav-link menuitem" href="#work"><i class="fa fa-cogs"></i>   Work</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menuitem" href="#work"><i class="fa fa-cogs"></i>   Previous Work</a>
+                            <a class="nav-link menuitem" href="#contact"><i class="fa fa-wrench"></i>   Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menuitem" href="#project"><i class="fa fa-book"></i>   Projects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link menuitem" href="#contact"><i class="fa fa-envelope"></i>   Contact</a>
@@ -86,7 +90,7 @@
                     </div>
                 </div>
                 <div class="row mx-auto bg-dark text-light mt-5" id="work">
-                    <h2 class="text-center mb-5 topic"><i class="fa fa-cogs"></i>   Previous Work</h2>
+                    <h2 class="text-center mb-5 topic"><i class="fa fa-cogs"></i>   Work</h2>
                     <div class="row mx-auto ps-5 justify-content-center align-items-center" id="workDiv">
                     <button class="collapsible bg-dark" aria-controls="work 1" data-target="#work1">
                         ZOLL Medical Corporation - Software Engineer
@@ -127,14 +131,15 @@
                     </p>
                     </div>
                     </div>
-                    <div class="row">
-                      <h4 class="text-center p-3 topic">Resume</h2>
-                        <iframe src="/Resources/Deepa-Hegde-Resume.pdf" style="width:800px; height:500px;" class="frame" frameborder="0" title="resume"></iframe>
+                    <div class="row mt-5 mb-5 p-3 col-5 mx-auto">
+                        <a href="Resources/Deepa-Hegde-Resume.pdf"  download="Deepa-Hegde-Resume.pdf" 
+                        class="btn btn-warning mx-auto rounded fs-5 btn-lg resume">
+                        <i class="fa fa-download"></i>  Download Resume</a>
                     </div>
                 </div>
                 <div class="row mx-auto bg-dark mt-5" id="project">
                     <h2 class="text-center mb-3 topic"><i class="fa fa-book"></i>   Projects</h2>
-                    <div class="row">
+                    <div class="row mx-auto p-5">
                         <div class="col-lg-4 mt-4">
                             <div class="card projectText">
                                 <div class="card-body bg-dark text-white border border-warning">
@@ -150,6 +155,38 @@
                                     </a>
                                     </div>
                                 </div>  
+                        </div>
+                        <div class="col-lg-4 mt-4">
+                            <div class="card projectText">
+                                <div class="card-body bg-dark text-white border border-warning">
+                                    <h4 class="card-title mt-3">Portfolio</h4>
+                                    <p class="card-text mt-3 mb-3">
+                                        This is a webpage that is hosted in GitHub pages. It contains the details of my bio, work experience, 
+                                        projects and contact form. This contact form is implemented using formsubmit.co to send the data as email to me.
+                                        The technologies used are HTML, CSS, JavaScript, Bootstrap.
+                                    </p>
+                                    <a href="https://github.com/dshegde/dshegde.github.io" aria-label="view code" 
+                                    role="button" class="btn btn-warning viewcode mt-3"> View Code
+                                        <i class="fa fa-code" aria-valuetext="view code"></i>
+                                    </a>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="col-lg-4 mt-4">
+                            <div class="card projectText">
+                                <div class="card-body bg-dark text-white border border-warning">
+                                    <h4 class="card-title mt-3">One Stop App</h4>
+                                    <p class="card-text mt-3 mb-3">
+                                        This is a python web application built on flask framework using jinja template. This application implements 3 API's 
+                                        that is, weather, news and quote of the day. This application is deployed on Google Cloud Run by creating a container image using 
+                                        a dockerfile which uses gunicorn gateway server.
+                                    </p>
+                                    <a href="https://gitlab.com/dshegde/cs530cloud-hegde-hegde/-/tree/main/final" aria-label="view code" 
+                                    role="button" class="btn btn-warning viewcode mt-3"> View Code
+                                        <i class="fa fa-code" aria-valuetext="view code"></i>
+                                    </a>
+                                </div>
+                            </div>  
                         </div>
                         <div class="col-lg-4 mt-4">
                             <div class="card projectText">
@@ -179,6 +216,22 @@
                                         data transfer, including file sharing.
                                     </p>
                                     <a href="https://github.com/dshegde/Network-Programming" aria-label="view code" 
+                                    role="button" class="btn btn-warning viewcode mt-3"> View Code
+                                        <i class="fa fa-code" aria-valuetext="view code"></i>
+                                    </a>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="col-lg-4 mt-4">
+                            <div class="card projectText">
+                                <div class="card-body bg-dark text-white border border-warning">
+                                    <h4 class="card-title mt-3">Pokemon Database</h4>
+                                    <p class="card-text mt-3 mb-3">
+                                        This project is to build a database which stores all the information about the pokemon, their types, 
+                                        moves and location at which they are seen. some of the tables were populated using csv file and 
+                                        some of the tables are populated using stored procedures. Technology used is PostgreSQL 
+                                    </p>
+                                    <a href="https://github.com/dshegde/Intro-to-Database-Mangagement-System" aria-label="view code" 
                                     role="button" class="btn btn-warning viewcode mt-3"> View Code
                                         <i class="fa fa-code" aria-valuetext="view code"></i>
                                     </a>
